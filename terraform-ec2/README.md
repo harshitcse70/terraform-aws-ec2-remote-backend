@@ -4,7 +4,7 @@
 
 **Stage 2: Deploying EC2 Instance with Security Group using Remote State**
 
-[← Back to Main Project](../README.md) | [← Bootstrap Guide](../terraform-bootstrap/BOOTSTRAP_README.md)
+[← Back to Main Project](../README.md) | [← Bootstrap Guide](../terraform-bootstrap/README.md)
 
 </div>
 

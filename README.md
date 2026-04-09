@@ -44,19 +44,18 @@ This project demonstrates a **professional-grade Terraform workflow** for provis
 terraform-aws-remote-backend/
 │
 ├── terraform-bootstrap/          # Stage 1: Backend Infrastructure
-│   ├── main.tf                      # S3 bucket + DynamoDB table
-│  
-│   
+│   ├── main.tf                  # S3 bucket + DynamoDB table
+│   ├── README.md                # Backend setup instructions
 │
-├── terraform-ec2/                # Stage 2: Application Infrastructure
-│   ├── main.tf                      # EC2 instance + Security group
-│   ├── backend.tf                   # Remote backend configuration
-│   ├── variables.tf                 # Input variables
-│   ├── outputs.tf                   # EC2 instance outputs
-│  
-│   
-├── .gitignore                       # Git ignore patterns
-├── README.md                        # This file
+├── terraform-ec2/               # Stage 2: Application Infrastructure
+│   ├── main.tf                  # EC2 instance + Security group
+│   ├── backend.tf               # Remote backend configuration
+│   ├── variables.tf             # Input variables
+│   ├── outputs.tf               # Outputs
+│   ├── README.md                # EC2 deployment steps
+│
+├── .gitignore                   # Git ignore patterns
+├── README.md                    # Project overview
 ```
 
 ### File Descriptions
@@ -71,7 +70,7 @@ terraform-aws-remote-backend/
 ---
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 ```
 1. Clone Repository
@@ -399,7 +398,7 @@ User A                     DynamoDB                    User B
   │                           │                    [Proceeds]
 ```
 
-## 🧹 Cleanup
+##  Cleanup
 
 ```bash
 # Destroy in reverse order
